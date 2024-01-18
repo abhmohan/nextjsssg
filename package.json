@@ -1,0 +1,17 @@
+{
+  "name": "nextjsssg",
+  "version": "1.0.0",
+  "description": "Static site generation using next js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^12.3.4"
+  }
+}
