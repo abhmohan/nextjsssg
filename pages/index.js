@@ -1,11 +1,12 @@
-export default function Users({ todos }) {
-    return <div>{JSON.stringify(todos)}</div>
+export default function Users({ users }) {
+    return <div>{JSON.stringify(users)}</div>
   }
 
 export async function getStaticProps() {
-    const res = await fetch('https://jsonplaceholder.typicode.com/todos');
-    const todos = await res.json();
+    console.log('index @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@');
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const users = await res.json();
     return {
-        props: { todos }
+        props: { users }
   }
 }

@@ -6,7 +6,6 @@ export default function User({ user }) {
 export async function getStaticProps({ params }) {
     const res = await fetch(`https://jsonplaceholder.typicode.com/users/${params.id}`);
     const user = await res.json();
-    console.log(user, params.id, '@@@@@@@@@@@@@@@@@@@@@@@@@user');
     return {
         props: { user }
   }
