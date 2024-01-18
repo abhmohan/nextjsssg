@@ -1,5 +1,4 @@
 export default function User({ user }) {
-    
     return <div>{user.name}</div>
   }
 
@@ -13,7 +12,6 @@ export async function getStaticProps({ params }) {
 
 
 export async function getStaticPaths() {
-    console.log('Building application');
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
     const users = await res.json()
 
