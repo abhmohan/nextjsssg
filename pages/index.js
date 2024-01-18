@@ -1,5 +1,5 @@
 export default function Users({ todos }) {
-    return <div>This is home page</div>
+    return <div>{JSON.stringify(todos)}</div>
   }
 
 export async function getStaticProps() {
